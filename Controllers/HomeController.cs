@@ -48,14 +48,18 @@ public class HomeController : Controller
         if (ModelState.IsValid)
         {
             string uniqueFileName = null;
-            if (model.Photo != null)
+            if (model.Photos != null && model.Photos.Count > 0)
             {
-                // hostingEnvironment is the parameter of HomeController constructor
-                string uploadsFolder =  Path.Combine(hostingEnvironment.WebRootPath,"images");
+                foreach (var photo in model.Photos)
+                {
+                    // hostingEnvironment is the parameter of HomeController constructor
+                    string uploadsFolder =  Path.Combine(hostingEnvironment.WebRootPath,"images");
                 
-                uniqueFileName = Guid.NewGuid().ToString() + "_" + model.Photo.FileName;
-                string filePath = Path.Combine( uploadsFolder, uniqueFileName);
-                model.Photo.CopyTo(new FileStream(filePath, FileMode.Create) );
+                    uniqueFileName = Guid.NewGuid().ToString() + "_" + photo.FileName;
+                    string filePath = Path.Combine( uploadsFolder, uniqueFileName);
+                    photo.CopyTo(new FileStream(filePath, FileMode.Create) );
+                }
+                
             }
 
             Employee newEmployee = new Employee

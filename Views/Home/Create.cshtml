@@ -36,10 +36,10 @@
     </div>
 
     <div class="form-group row">
-        <label asp-for="Photo" class="col-sm-2 col-form-label"></label>
+        <label asp-for="Photos" class="col-sm-2 col-form-label"></label>
         <div class="col-sm-10">
-            <div class="form-file">
-                <input asp-for="Photo" class="form-control form-file-input" >
+            <div class="custom-file">
+                <input asp-for="Photos" class="form-control" type="file" multiple >
                @* <label class="form-file-label" for="photoInput">Choose File...</label> *@
             </div>
         </div>
