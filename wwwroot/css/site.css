@@ -1,0 +1,8 @@
+.btn{
+    width: 75px;
+}
+.imageThumbnail {
+    width: 100%;
+    height: 200px; /* Adjust this height as needed */
+    object-fit: cover; /* Ensures the image is cropped to fit */
+}

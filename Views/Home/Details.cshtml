@@ -1,0 +1,42 @@
+@model HomeDetailsViewModel
+
+@{
+   // Layout = "~/Views/Shared/_Layout.cshtml";
+   // Layout is now setting from _ViewStart.cshtml file for each views
+
+    ViewBag.Title = "Employee Details";
+    var photoPath = "~/Images/" + (@Model.Employee.PhotoPath ?? "noimage.jpg");
+}
+
+<div class="row justify-content-center m-3">
+    <div class="col-lg-6 col-md-8 col-sm-10">
+        <div class="card">
+            <div class="card-header text-center">
+                <h1>@Model.Employee.Name</h1>
+            </div>
+
+            <div class="card-body text-center">
+                <img class="img-fluid mx-auto d-block" src="@photoPath" asp-append-version="true" style="max-height: 300px; object-fit: contain;" />
+
+                <h4 class="mt-3">Employee ID: @Model.Employee.Id</h4>
+                <h4>Email: @Model.Employee.Email</h4>
+                <h4>Department: @Model.Employee.Department</h4>
+            </div>
+
+            <div class="card-footer text-center">
+                <a asp-controller="home" asp-action="Index" asp-route-id="@Model.Employee.Id"
+                   class ="btn btn-secondary">Back</a>
+            <!-- <a href="#" class="btn btn-secondary">Back</a> -->
+                
+                <a href="#" class="btn btn-primary">Edit</a>
+                <a href="#" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/CustomScript.js"></script>
+}
+
+

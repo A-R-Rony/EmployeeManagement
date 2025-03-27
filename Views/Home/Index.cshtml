@@ -1,0 +1,32 @@
+@model IEnumerable<Employee>
+
+
+@{
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+    // Layout is now setting from _ViewStart.cshtml file for each views
+    ViewBag.Title = "Employee List";
+}
+
+<div class="d-flex flex-wrap justify-content-center">
+    @foreach (var employee in Model)
+    {
+        var photoPath = "~/Images/" + (employee.PhotoPath ?? "noimage.jpg");
+
+        <div class="card m-3" style="min-width: 18rem; max-width:30.5%;">
+            <div class="card-header">
+                <h3>@employee.Name</h3>
+            </div>
+             
+            <img class="card-img-top imageThumbnail" src="@photoPath"  
+                 asp-append-version="true"/>
+            <div class="card-footer text-center">
+                <a asp-controller="home" asp-action="Details" asp-route-id="@employee.Id"
+                   class="btn btn-primary">View</a>
+               
+                <a href="#" class="btn btn-primary">Edit</a>
+                <a href="#" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+    }
+</div>
+
