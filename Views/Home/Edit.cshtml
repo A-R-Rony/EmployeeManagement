@@ -1,19 +1,23 @@
-@model EmployeeCreateViewModel
+@model EmployeeEditViewModel
 @{
-    ViewBag.Title = "Create Employee";
+    ViewBag.Title = "Edit Employee";
+    var photoPath = "~/Images/" + (@Model.ExistingPhotoPath ?? "noimage.jpg");
 }
 
-<form enctype="multipart/form-data" asp-controller="Home" asp-action="Create" 
+<form enctype="multipart/form-data" asp-controller="Home" asp-action="Edit"
       method="post" class="mt-3">
+    <input hidden asp-for="Id"/>
+    <input hidden asp-for="ExistingPhotoPath"/>
+    
     <div class="form-group row">
         <div asp-validation-summary="All" class="text-danger"></div>
-        
+
         <label asp-for="Name" class="col-sm-2 col-form-label"></label>
         <div class="col-sm-10 col-form-label">
             <input asp-for="Name" class="form-control" placeholder="Name">
             <span asp-validation-for="Name" class="text-danger"></span>
         </div>
-        
+
     </div>
     <div class="form-group row">
         <label asp-for="Email" class="col-sm-2 col-form-label"></label>
@@ -31,34 +35,40 @@
                 <option value="">Please Select</option>
             </select>
             <span asp-validation-for="Department" class="text-danger"></span>
-            
+
         </div>
     </div>
 
     <div class="form-group row">
         <label asp-for="Photo" class="col-sm-2 col-form-label"></label>
         <div class="col-sm-10">
-            <div class="custom-file">
-                <input asp-for="Photo" class="form-control" type="file"  >
-               @* <label class="form-file-label" for="photoInput">Choose File...</label> *@
+            <input asp-for="Photo" class="form-control" type="file" id="photoInput" style="display: none;">
+            <div class="form-control" onclick="document.getElementById('photoInput').click()" style="cursor: pointer">
+                Click here to change photo
             </div>
         </div>
     </div>
+    <div class="row col-sm-4 offset-4">
+        <img src="@photoPath" class="imageThumbnail" asp-append-version="true"/>
+    </div>
+   
     
     <div class="form-group row">
         <div class="col-sm-10 col-form-label">
-            <button type="submit" class="btn btn-primary">Create</button>
+            <button type="submit" class="btn btn-primary">Update</button>
+            <a asp-controller="Home" asp-action="Index" class="btn btn-primary">Cancel</a>
         </div>
     </div>
+
     
-@*
-    @section Scripts {
-        <script>
-        document.getElementById('photoInput').addEventListener('change', function() {
-            var fileName = this.files[0]?.name || "Choose File...";
-            this.nextElementSibling.textContent = fileName;
+     
+    
+</form>
+@section Scripts {
+    <script>
+        document.getElementById('photoInput').addEventListener('change', function(e) {
+            const fileName = e.target.files[0]?.name || "Click here to change photo";
+            document.querySelector('.form-control[onclick]').textContent = fileName;
         });
     </script>
-    }
-    *@
-</form>
+}

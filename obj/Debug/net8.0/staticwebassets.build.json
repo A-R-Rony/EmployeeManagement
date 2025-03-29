@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hDWDGeNoCWv3S4/BLju8XK6ctEB7RDuUc/63mQ6tPz0=",
+  "Hash": "ISRwCf7OSbYrxCjDyAbxT6Gn+mmHp5YzZ5qXIvM91oQ=",
   "Source": "EmployeeManagement",
   "BasePath": "_content/EmployeeManagement",
   "Mode": "Default",
@@ -93,12 +93,12 @@
       "OriginalItemSpec": "wwwroot\\images\\0437585f-c606-4358-afaa-f580c7ca8a41_formal2.png"
     },
     {
-      "Identity": "F:\\dotnet project\\WebApplication3\\EmployeeManagement\\wwwroot\\images\\07d3fe76-e509-4f60-9544-e90257ac1bd5_Screenshot 2025-03-21 233921.png",
+      "Identity": "F:\\dotnet project\\WebApplication3\\EmployeeManagement\\wwwroot\\images\\bacda7b7-b869-4987-a866-226cab77bfe4_formal-removebg-preview (1).png",
       "SourceId": "EmployeeManagement",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\dotnet project\\WebApplication3\\EmployeeManagement\\wwwroot\\",
       "BasePath": "_content/EmployeeManagement",
-      "RelativePath": "images/07d3fe76-e509-4f60-9544-e90257ac1bd5_Screenshot 2025-03-21 233921.png",
+      "RelativePath": "images/bacda7b7-b869-4987-a866-226cab77bfe4_formal-removebg-preview (1).png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -109,7 +109,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\07d3fe76-e509-4f60-9544-e90257ac1bd5_Screenshot 2025-03-21 233921.png"
+      "OriginalItemSpec": "wwwroot\\images\\bacda7b7-b869-4987-a866-226cab77bfe4_formal-removebg-preview (1).png"
     },
     {
       "Identity": "F:\\dotnet project\\WebApplication3\\EmployeeManagement\\wwwroot\\images\\cf09206a-74f2-41c6-861c-db3701ae3677_formal2.png",

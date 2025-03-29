@@ -64,12 +64,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\0437585f-c606-4358-afaa-f580c7ca8a41_formal2.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\07d3fe76-e509-4f60-9544-e90257ac1bd5_Screenshot 2025-03-21 233921.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\bacda7b7-b869-4987-a866-226cab77bfe4_formal-removebg-preview (1).png))">
       <SourceType>Package</SourceType>
       <SourceId>EmployeeManagement</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/EmployeeManagement</BasePath>
-      <RelativePath>images/07d3fe76-e509-4f60-9544-e90257ac1bd5_Screenshot 2025-03-21 233921.png</RelativePath>
+      <RelativePath>images/bacda7b7-b869-4987-a866-226cab77bfe4_formal-removebg-preview (1).png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -78,7 +78,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\07d3fe76-e509-4f60-9544-e90257ac1bd5_Screenshot 2025-03-21 233921.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\bacda7b7-b869-4987-a866-226cab77bfe4_formal-removebg-preview (1).png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\cf09206a-74f2-41c6-861c-db3701ae3677_formal2.png))">
       <SourceType>Package</SourceType>
