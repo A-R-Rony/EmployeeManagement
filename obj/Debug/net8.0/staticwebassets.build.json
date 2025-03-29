@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ISRwCf7OSbYrxCjDyAbxT6Gn+mmHp5YzZ5qXIvM91oQ=",
+  "Hash": "PPHZ4ifSOsS5Z10YlA+1h21U0ht2ehlVJVZLPWAAJEw=",
   "Source": "EmployeeManagement",
   "BasePath": "_content/EmployeeManagement",
   "Mode": "Default",
@@ -93,6 +93,25 @@
       "OriginalItemSpec": "wwwroot\\images\\0437585f-c606-4358-afaa-f580c7ca8a41_formal2.png"
     },
     {
+      "Identity": "F:\\dotnet project\\WebApplication3\\EmployeeManagement\\wwwroot\\images\\a23e6e6e-736d-4708-bb81-3104c2f96d1b_formal-removebg-preview (1).png",
+      "SourceId": "EmployeeManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\dotnet project\\WebApplication3\\EmployeeManagement\\wwwroot\\",
+      "BasePath": "_content/EmployeeManagement",
+      "RelativePath": "images/a23e6e6e-736d-4708-bb81-3104c2f96d1b_formal-removebg-preview (1).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\a23e6e6e-736d-4708-bb81-3104c2f96d1b_formal-removebg-preview (1).png"
+    },
+    {
       "Identity": "F:\\dotnet project\\WebApplication3\\EmployeeManagement\\wwwroot\\images\\bacda7b7-b869-4987-a866-226cab77bfe4_formal-removebg-preview (1).png",
       "SourceId": "EmployeeManagement",
       "SourceType": "Discovered",
@@ -110,25 +129,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\bacda7b7-b869-4987-a866-226cab77bfe4_formal-removebg-preview (1).png"
-    },
-    {
-      "Identity": "F:\\dotnet project\\WebApplication3\\EmployeeManagement\\wwwroot\\images\\cf09206a-74f2-41c6-861c-db3701ae3677_formal2.png",
-      "SourceId": "EmployeeManagement",
-      "SourceType": "Discovered",
-      "ContentRoot": "F:\\dotnet project\\WebApplication3\\EmployeeManagement\\wwwroot\\",
-      "BasePath": "_content/EmployeeManagement",
-      "RelativePath": "images/cf09206a-74f2-41c6-861c-db3701ae3677_formal2.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\cf09206a-74f2-41c6-861c-db3701ae3677_formal2.png"
     },
     {
       "Identity": "F:\\dotnet project\\WebApplication3\\EmployeeManagement\\wwwroot\\images\\img1.jpg",

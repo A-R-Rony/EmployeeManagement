@@ -30,7 +30,7 @@ app.UseStaticFiles();
 
 app.UseRouting(); // Enables routing system
 app.UseAuthorization(); // Enables authorization middleware (if needed)
-
+//app.UseStatusCodePages();
 // Map MVC routes
 app.MapControllerRoute(
     name: "default",
